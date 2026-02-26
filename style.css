@@ -1,0 +1,162 @@
+:root{
+    --primary-color:beige;
+    --secondary-color:#4e342e;
+    --color:var(--primary-color)
+}
+
+
+body{
+    background-color: beige;
+     margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--secondary-color);
+    padding: 10px;
+
+}
+
+.recipe-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    border-radius: 15px;
+}
+ .header-right{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    gap: 10px;
+ }
+.nav-links{
+    display: flex;
+    gap: 15px;
+}
+nav a {
+     color: rgb(28, 22, 22);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 100;
+    transition: 0.3s;
+    text-align: right;
+}
+
+
+ .search-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+
+ .input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  padding: 5px 30px 5px 10px; /* Space for icon on the right */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #888;
+}
+
+.find-btn {
+  background-color: #4a2c2a;
+  color: white;
+  border: none;
+  padding: 4px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: lowercase; 
+}
+
+header h1 {
+    color: var(--secondary-color);
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase; /* Optional: makes it look like a real brand */
+    letter-spacing: 2px;
+}
+
+.add-recipe {
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.add-recipe h2 {
+      color: #4e342e;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d7ccc8; 
+    border-radius: 10px;
+    background-color: #fffaf0;
+    font-size: 1rem;
+    color: #4e342e;
+    border-left: 5px solid #4e342e;
+}
+
+button[type="submit"] {
+    background-color: #4e342e;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 10px;
+}
+
+.recipe-card{
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    min-height: 300px;
+    max-width: 800px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #4e342e;
+    display: flex;
+    flex-direction: column;
+    
+}
+.recipe-card h3 {
+    color: #4e342e;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.btn-show-steps {
+    display: inline-block;
+    background-color: #4e342e; 
+    color: white;
+    padding: 8px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    list-style: none; 
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+

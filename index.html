@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="recipe-header">
+  <div class="logo-section">
+    <h1 class="logo">Recipe Hub</h1>
+    <span class="tagline">A place to share, learn, and grow through cooking</span>
+  </div>
+
+  <div class="header-right">
+    <nav class="nav-links">
+      <a href="#index.html">Home</a>
+      <a href="#recipes">Recipe</a>
+      <a href="#share">Share</a>
+      <a href="#">Contact</a>
+    </nav>
+    
+    <div class="search-container">
+      <div class="input-wrapper">
+        <input type="stext" placeholder="Search for a recipe...">
+        <span class="search-icon">&#128269;</span>
+      </div>
+      <button class="find-btn">find</button>
+    </div>
+  </div>
+</header>
+x    
+    <hr>
+    
+    <section id = "share" class = "add-recipe">
+    <div class="add-recipe">
+        <h2>Share your favorite</h2>
+        <form action="/save-recipe" method="post">
+            <label for="recipe-name">Recipe Name:</label><br>
+            <input type="text" id="recipe-name" name="title" required><br><br>
+             
+            <label for="user-ingredients">Ingredients (one per line):</label><br>
+            <textarea id="user-ingredients" name="ingredients" rows="5"></textarea><br>
+
+            <label for="recipe-steps">Steps</label><br>
+            <textarea name="Steps" id="recipe-stoes" rows="5"></textarea><br>
+            
+            <button type="submit">Post Recipe</button>
+        </form>
+    </div>
+    </section>
+     
+    <hr>
+
+    <section id="recipes" class="recipes-display">
+    <div class="recipes-display">
+        <h2>Community Recipes</h2>
+        <p>Find the recipe you wanna learn here.</p>
+        
+        <div id="recipe-list">
+            
+            <div class="recipe-card">
+                <h3>Homemade Ramen</h3>
+                  
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li> Noodles</li>
+                        <li>Broth</li>
+                        <li>Egg</li>
+                        <li>Green Onions</li>
+                    </ul>
+            
+                <details>
+                    <summary class="btn-show-steps">View Cooking Steps</summary>
+                    <div class="steps-content">
+                        <ol>
+                            <li>Boil the broth.</li>
+                            <li>Add noodles and cook for 3 minutes.</li>
+                            <li>Top with egg and onions.</li>
+                        </ol>
+                    </div>
+                </details>
+            </div>
+            
+            <hr>
+
+            <div class="recipe-card">
+                <h3>Chocolate Chip Cookies</h3>
+             
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>2 cups of flour</li>
+                        <li>1 cup butter (softened)</li>
+                        <li>1/2 cups of sugar</li>
+                        <li>1 cup of chocolate chips</li>
+                    </ul>
+                <details>
+                    <summary class="btn-show-steps">View Cooking Steps</summary>
+                    <div class="steps-content">
+                        <ol>
+                            <li>Preheat your oven to 180°C</li>
+                            <li>Mix the butter and the sugar until smooth</li>
+                            <li>Slowly add chocolate chips</li>
+                            <li>Bake for 10-12 minutes until golden brown</li>
+                        </ol>
+                    </div>
+                </details>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2026 Mylene Mercurio</p>
+    </footer>
+    
+</body>
+</html>
