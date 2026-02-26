@@ -1,15 +1,9 @@
-:root{
-    --primary-color:beige;
-    --secondary-color:#4e342e;
-    --color:var(--primary-color)
-}
-
 
 body{
     background-color: beige;
      margin: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--secondary-color);
+    color: #4e342e;
     padding: 10px;
 
 }
@@ -152,6 +146,7 @@ button[type="submit"] {
     margin-top: 10px;
     align-self: flex-start;
 }
+
 
 
 
